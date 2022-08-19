@@ -1,0 +1,151 @@
+html, body, .root {
+    font-family: 'Ubuntu';
+    background: white;
+    color: #424243;
+}
+
+.header {
+}
+
+.header-text {
+
+}
+
+.header-logo {
+}
+
+.header a {
+    background: none;
+}
+
+.nav {
+}
+
+a {
+    color: #dd0066;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+.content {
+
+}
+
+.solution-list li {
+    border-radius: 5px;
+}
+
+.solution-preview {
+}
+
+.solution-list .solution-preview-image {
+    border-radius: 5px 0 0 5px;
+}
+
+.solution-title {
+    font-weight: bold;
+}
+
+.solution-description {
+}
+
+div.solution-citation {
+    font-family: 'Ubuntu Condensed';
+    background: #323233;
+    padding: 4px 10px;
+    margin: 2px -10px;
+}
+
+.install-guide ol {
+    margin: 0;
+    padding: 0;
+}
+
+.install-guide li {
+    display: flex;
+}
+
+.install-guide li > span {
+    display: inline-block;
+    flex: 3;
+}
+
+.install-guide li > span:first-child {
+    flex: 1;
+}
+
+.install-guide li code, .solution-preview-guide code {
+    background: #323234;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 110%;
+    margin: 5px;
+}
+
+.solution-preview-text {
+    background: #272729;
+    border-radius: 0 5px 5px 0;
+}
+
+.meta-name {
+    font-family: 'Ubuntu Mono';
+    font-size: 110%;
+}
+
+.meta-value {
+    background: white;
+    margin-right: -20px;
+}
+
+.doc-box-content {
+    background: white;
+}
+
+.doc-box {
+    border-radius: 5px;
+    background: rgba(255, 255,255 , 0.3);
+}
+
+.doc-box-title {
+}
+
+.meta-box {
+    border-radius: 5px;
+}
+
+.doc-box pre[class*="language-"] {
+    background: none;
+}
+
+.doc-box code[class*="language-"], pre[class*="language-"] {
+    color: black;
+    background: none;
+}
+
+.solution-cover {
+    border-radius: 5px;
+}
+
+.gui-button {
+    box-shadow: #e2e2e4;
+    border-radius: 3px;
+}
+
+.os-specific-download {
+    border-radius: 12px;
+}
+
+.citation-doi, .tag {
+    background: rgba(0, 0,0 , 0.1);
+    border-radius: 3px;
+    font-family: "Ubuntu Mono"
+}
+
+@media (max-width: 1360px) {
+    .header-logo, .header .header-menu-item {
+        border: 0;
+    }
+}
