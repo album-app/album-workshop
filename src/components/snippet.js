@@ -3,7 +3,7 @@ import Layout from "../pages/layout"
 
 const SnippetTemplate = ({ snippet }) => {
 return (
-<div class="snippet" id={snippet.id}>
+<div class="snippet">
     <h1 class="title">{snippet.snippetTitle}</h1>
     <div class="description">{snippet.snippetDescription}</div>
     <div dangerouslySetInnerHTML={{ __html: snippet.children[0].html }}/>
