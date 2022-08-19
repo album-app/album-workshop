@@ -46,7 +46,7 @@ exports.createPages = async function ({ actions, graphql, cache }) {
 
   const { createNode, createNodeField, store } = actions;
   const api = new Gitlab({
-      token: process.env.CI_JOB_TOKEN,
+      token: process.env.GITLAB_API_TOKEN,
   });
   data = await api.ProjectSnippets.all(process.env.CI_PROJECT_ID);
     for (snippet of data) {
