@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../pages/layout"
-import Snippet from "../pages/snippet"
+import Layout from "../components/layout"
+import Snippet from "../components/snippet"
 
 const SnippetsTemplate = ({ pageContext }) => (
   <Layout site={pageContext.site}>

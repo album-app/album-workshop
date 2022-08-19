@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../pages/layout"
+import Layout from "./layout"
 
 const SnippetTemplate = ({ snippet }) => {
 return (
