@@ -6,7 +6,7 @@ module.exports = {
  pathPrefix: '/',
  siteMetadata: {
     title: 'Album workshop',
-    subtitle: 'workshop subtitle',
+    subtitle: '',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
