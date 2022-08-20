@@ -1,1 +1,1 @@
-https://album-app.gitlab.io/album-worksop
+https://album-app.gitlab.io/album-workshop
