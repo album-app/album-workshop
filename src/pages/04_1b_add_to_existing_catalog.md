@@ -1,6 +1,6 @@
 ---
 slug: "/concepts"
-title: "4.1.b. Add your solution to an existing catalog"
+title: "4.1b Add your solution to an existing catalog"
 description: "You will learn how to deploy a solution to an existing catalog."
 ---
 
