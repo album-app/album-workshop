@@ -1,6 +1,6 @@
 ---
 slug: "/concepts"
-title: "4.1.c. Create and populate a local catalog"
+title: "4.1c Create and populate a local catalog"
 description: "You will learn how to setup a local catalog, for example on a network drive, and how to deploy your solution into it."
 ---
 
