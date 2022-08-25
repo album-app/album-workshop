@@ -9,10 +9,10 @@ return (
   <Layout site={pageContext.site}>
     {pageContext.snippets.map(snippet => {
         var snippetClass="snippet-link"
-        if(snippet.snippetTitle.includes("[optional]")) {
+        if(snippet.frontmatter.title.includes("[optional]")) {
             snippetClass = "snippet-link optional"
         }
-        return <Link id={snippet.id} className={snippetClass} to={"/"+snippet.name}><h2>{snippet.snippetTitle}</h2><div>{snippet.snippetDescription}</div></Link>})
+        return <Link id={snippet.id} className={snippetClass} to={snippet.frontmatter.slug}><h2>{snippet.frontmatter.title}</h2><div>{snippet.frontmatter.description}</div></Link>})
     }
   </Layout>
 )}
