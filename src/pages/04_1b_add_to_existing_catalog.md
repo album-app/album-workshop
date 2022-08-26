@@ -14,7 +14,7 @@ catalog. Like for example the catalog of a coworker. The following steps will sh
 
 2. Add the target catalog to your collection.
     ```
-   album add-catalog 
+   album add-catalog [catalog-name]
    ```
 
 3. Deploy your solution into the catalog.

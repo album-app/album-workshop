@@ -16,17 +16,9 @@ you can use the package plugin of album to create an executable which will insta
            ```
            ~/.album/activate_album
            ```
-           or
-           ```
-           ~/.album/Miniconda/condabin/conda activate -p /~/.album/envs/album
-           ```
         2. Windows:
            ```
            ~/.album/activate_album.bat
-           ```
-           or
-           ```
-           ~/.album/Miniconda/condabin/conda.bat activate -p /~/.album/envs/album
            ```
     2. If you installed Album manually use following command:
        ```

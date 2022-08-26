@@ -23,7 +23,8 @@ it.
 
 1. Create an empty repository
     - Log in into your preferred Git instance and create an empty repository.
-      (PLATZ FÜR BILDER)
+      ![create_blank](https://gitlab.com/album-app/album-workshop/-/raw/main/static/choose_blank_circle.jpg)
+      ![create_keys](https://gitlab.com/album-app/album-workshop/-/raw/main/static/new_repo_creation_fields.jpg)
 2. Clone the repository and apply the album catalog structure
     - After you created the repository run the following command to clone the repository to your local hard drive and
       apply the album catalog structure to it
