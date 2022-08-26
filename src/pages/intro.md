@@ -45,7 +45,7 @@ A catalog can have a web view that lists all available solutions.
 So you can simply browse them online. 
 When devoting a catalog a certain topic, you could even find solutions faster.
 
-That is hwo solutions are findable.
+That is how solutions are findable.
 
 You can look at [this page](https://album-app.gitlab.io/catalogs/default/catalog) to get a feeling
 for a web representation. 
