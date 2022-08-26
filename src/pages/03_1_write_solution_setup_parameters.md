@@ -1,5 +1,5 @@
 ---
-slug: "/concepts"
+slug: "/solution_writing"
 title: "3.1 writing a solution"
 description: "This section explains how to write an Album solution, install and run it."
 ---
