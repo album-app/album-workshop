@@ -1,13 +1,13 @@
 ---
 slug: "/solution_writing"
-title: "3.1 writing a solution"
-description: "This section explains how to write, install and run an Album solution."
+title: "3. Writing a solution"
+description: "This section explains how to write an Album solution, install and run it."
 ---
 
-Before we can start to write a solution we need to take a look at the basic building parts of a solution first. The first and
-most important part is the setup method. It defines the properties of the solution based on the parameters it gets and
-represents the only mandatory part of a solution. Every setup method requires at least 4 parameters to make a solution
-unique and executable.
+Before we can start to write a solution we need to take a look at the basic building parts of a solution first. The
+first and most important part is the setup method. It defines the properties of the solution based on the parameters it
+gets and represents the only mandatory part of a solution. Every setup method requires at least 4 parameters to make a
+solution unique and executable.
 
 1. group: the group which takes credit for the solution.
 2. name: the name of the solution
@@ -16,7 +16,7 @@ unique and executable.
 
 Group, name and version are used as the solution identifiers. Other parameter can be used to add more meta information
 to your solution like for example the creator of the solution or a brief description of the solution. A full list of
-parameters is available at the album [documentation](https://docs.album.solutions/en/latest/solution-development.html).
+parameters is available at the Album [documentation](https://docs.album.solutions/en/latest/solution-development.html).
 
 Task 1: Write a solution with the minimal configuration.
 <details>
@@ -33,7 +33,9 @@ Task 1: Write a solution with the minimal configuration.
 </details>
 
 The next part of a solution we are going to look at is the environment string. It defines the environment in which the
-solution should be run and therefore defines which versions of programs and libraries will be used. It looks something like this:
+solution should be run and therefore defines which versions of programs and libraries will be used. It looks something
+like this:
+
 ```
 env_file = """channels:
  - defaults
@@ -41,8 +43,10 @@ dependencies:
  - python=3.6
 """
 ```
-and needs to be added as the dependencies' parameter to the setup function. Fixing the versions of used libraries and programs
-makes the results of a solution reproducible, since no updates in the used libraries will affect the results of your solution.
+
+and needs to be added as the dependencies' parameter to the setup function. Fixing the versions of used libraries and
+programs makes the results of a solution reproducible, since no updates in the used libraries will affect the results of
+your solution.
 
 Task 2: Write a minimal solution which uses python 3.10.
 <details>
@@ -65,10 +69,10 @@ Task 2: Write a minimal solution which uses python 3.10.
 
 </details>
 
-Now we have a solution which is identifiable and uses a predefined environment for its execution, but it still does nothing.
-To get our solution to actually do something we need to define the run method of the solution. Like the name says the run method
-defines what the solution does when its executed. Simply define a method called run in your solution and add the parameter
-run=run into your setup method.
+Now we have a solution which is identifiable and uses a predefined environment for its execution, but it still does
+nothing. To get our solution to actually do something we need to define the run method of the solution. Like the name
+says the run method defines what the solution does when its executed. Simply define a method called run in your solution
+and add the parameter run=run into your setup method.
 
 Task 3: Add a run method to your solution.
 
@@ -96,10 +100,10 @@ Task 3: Add a run method to your solution.
 
 </details>
 
-Our solution is now able to be executed, but will always do the same. Most modern applications are required to react to input 
-arguments. In order to make our solution able to handle input arguments we need to add another parameter to the setup method,
-the args parameter. The value of the args parameter is a list of dictionaries where each dictionary defines one input argument 
-of the solution. A single input argument could look something like this:
+Our solution is now able to be executed, but will always do the same. Most modern applications are required to react to
+input arguments. In order to make our solution able to handle input arguments we need to add another parameter to the
+setup method, the args parameter. The value of the args parameter is a list of dictionaries where each dictionary
+defines one input argument of the solution. A single input argument could look something like this:
 
 ```
 {  
@@ -143,8 +147,8 @@ Task 4: Define an input argument for your solution and access its value in the r
 
 </details>
 
-Now our solution has everything it need to be installed and executed. To install your solution run the following command 
-inside your album environment:
+Now our solution has everything it needs to be installed and executed. To install your solution run the following
+command inside your Album environment:
 
 ```
 album install path/to/your/solution.py
@@ -155,3 +159,58 @@ After the installation is finished run the solution with the following command:
 ```
 album run path/to/your/solution.py --name Eren
 ```
+
+Since you have a working solution now, it probably won't be long until you will write your next solution. When your
+second solutions is solving a similar tasks as the first one, you don't need to create a second solution environment.
+When two solutions would run in an identical environment it is possible for both solutions to use the same environment.
+For that a solution can inherit the environment of another solution. In order to do so you just have to define the
+solution from which the environment should be inherited as the parent of the current solution. This can be done by
+adding the parent solution identifier (group:name:version) to the dependency dictionary in the setup. The parent
+solution needs to be part of your collection in order to pass their environment on.
+
+```
+setup(
+   group="my-research-group",
+   name="projectxy",
+   version="0.1.0",
+   album_api_version="0.4.2",
+   dependencies={
+      "parent": {
+    "resolve_solution": "album:template-python:0.1.0"
+   }
+   },
+   args=[{
+   "name": "name",
+   "type": "string",
+   "description": "How to you want to be addressed?"
+   }],
+   run=run
+)
+
+```
+
+Task 5: Let your solution inherit the environment of the "template-python" solution template of Album.
+
+<details>
+  <summary>Task 5 solution</summary>
+  
+    def run():
+        from album.runner.api import get_args
+        print("Hello", get_args().name, ", nice too meet you!")
+
+    from album.runner.api import setup
+    setup(
+       group="my-research-group",
+       name="projectxy",
+       version="0.1.0",
+       album_api_version="0.4.2",
+       dependencies={"parent": {"resolve_solution": "album:template-python:0.1.0"}},
+       args=[{
+       "name": "name",
+       "type": "string",
+       "description": "How to you want to be addressed?"
+       }],
+       run=run
+    )
+
+</details>
