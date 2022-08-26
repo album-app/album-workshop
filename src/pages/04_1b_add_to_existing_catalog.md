@@ -1,5 +1,5 @@
 ---
-slug: "/concepts"
+slug: "/add_to_catalog"
 title: "4.1b Add your solution to an existing catalog"
 description: "You will learn how to deploy a solution to an existing catalog."
 ---
