@@ -193,7 +193,7 @@ Task 5: Let your solution inherit the environment of the "template-python" solut
 
 <details>
   <summary>Task 5 solution</summary>
-  
+
     def run():
         from album.runner.api import get_args
         print("Hello", get_args().name, ", nice too meet you!")
@@ -214,3 +214,21 @@ Task 5: Let your solution inherit the environment of the "template-python" solut
     )
 
 </details>
+
+Now you know how to write your own solutions from scratch, but what if you found a great solution which you want to
+alter before you using it? In this case you can clone a copy the solution in your local collection which you can then
+alter. to copy an existing solution use the following command:
+
+```
+album clone [solution-file-or-url] --target-dir [parent-dir-of-new-solution] --name [name-of-new-solution]
+```
+
+or
+
+```
+album clone [group:name:version] --target-dir [parent-dir-of-new-solution] --name [name-of-new-solution]
+```
+
+Now you got a local copy of the solution, if you alter it keep in mind adding your self to the solution_creator key of
+the setup method, but don't delete previous creators. That way the next one who uses the solution can comprehend who
+worked on the solution. 
