@@ -105,7 +105,7 @@ input arguments. In order to make our solution able to handle input arguments we
 setup method, the args parameter. The value of the args parameter is a list of dictionaries where each dictionary
 defines one input argument of the solution. A single input argument could look something like this:
 
-```
+```python
 {  
   "name": "name of the argument whih can be used to access the value of the argument",
   "type": "the type of the input argument for example string or file",
@@ -168,7 +168,7 @@ solution from which the environment should be inherited as the parent of the cur
 adding the parent solution identifier (group:name:version) to the dependency dictionary in the setup. The parent
 solution needs to be part of your collection in order to pass their environment on.
 
-```
+```python
 setup(
    group="my-research-group",
    name="projectxy",
