@@ -1,7 +1,7 @@
 ---
 slug: "/solution_writing"
 title: "3.1 writing a solution"
-description: "This section explains how to write an Album solution, install and run it."
+description: "This section explains how to write, install and run an Album solution."
 ---
 
 Before we can start to write a solution we need to take a look at the basic building parts of a solution first. The first and
