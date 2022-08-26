@@ -1,5 +1,5 @@
 ---
-slug: "/concepts"
+slug: "/remote_catalog"
 title: "4.1a Create and populate a remote catalog"
 description: "In this section of the workshop you will create a remote catalog living on Gitlab and deploy the solution
 you wrote in the previous sections of the workshop into it."
