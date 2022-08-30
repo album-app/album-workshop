@@ -47,12 +47,14 @@ All instructions, including how to install Album, should be linked and easily ac
 
 ---
 
-After installing Album and adding the Helmholtz Imaging Solutions catalog all solutions in this catalog are listed in your local Album collection.  
+After installing Album and adding the Helmholtz Imaging Solutions catalog all solutions in this catalog are listed in your **local Album collection**. 
+The local collection is a database keeping track of all solutions - the solutions of each catalog once you add or upgrade it, and of all solutions you install locally or from a path or URL.
+
 By now, you should be able to call `album` commands from the command line. 
 
 <div class="task">
-<div class="task-title">Task 3 - inspect local installation</div>
-Inspect your local installation by calling this command:
+<div class="task-title">Task 3 - inspect local collection</div>
+Inspect your local Album collection by calling this command:
 <pre><code>album index
 </code></pre>
 </div>
