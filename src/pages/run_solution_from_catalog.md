@@ -1,5 +1,5 @@
 ---
-slug: "/solution_writing"
+slug: "/run_solution_from_catalog"
 title: "2. Run a solution from the Helmholtz Imaging Solutions catalog"
 description: "You will learn how to install Album and run an existing solution from a catalog."
 ---
