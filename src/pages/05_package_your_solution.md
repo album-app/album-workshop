@@ -1,6 +1,6 @@
 ---
 slug: "/package"
-title: "5 package a solution"
+title: "5. package a solution"
 description: "In this section you will learn how to package your solution into an executable, which installs your
 solution on other systems so you can easily share your solution with others."
 ---
