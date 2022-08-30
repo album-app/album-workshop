@@ -16,6 +16,10 @@ Learning objectives:
 If you want to collect your solutions inside a catalog but don't want to make it public you can create a local catalog,
 for example on your local hard drive or a network drive. 
 
+<div class="task">
+<div class="task-title">Task 1 - Follow the steps to create a catalog that lives on your local hard drive and deploy a solution to it. </div>
+
+
 1. Create a new catalog on your hard drive:
     ```
    album clone template:catalog [catalog-dir] [catalog-name]
@@ -32,3 +36,4 @@ for example on your local hard drive or a network drive.
    album update [catalog-name]
    album upgrade [catalog-name]
    ```
+</div>

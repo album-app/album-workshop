@@ -32,9 +32,11 @@ Group, name and version are used as the solution identifiers. Other parameter ca
 to your solution like for example the creator of the solution or a brief description of the solution. A full list of
 parameters is available at the Album [documentation](https://docs.album.solutions/en/latest/solution-development.html).
 
-**Task 1: Write a solution with the minimal configuration.**
+<div class="task">
+<div class="task-title">Task 1 - Write a solution with the minimal configuration</div>
+
 <details>
-  <summary>Task 1 solution</summary>
+  <summary>Task 1 - solution</summary>
 
     from album.runner.api import setup
     setup(
@@ -45,6 +47,7 @@ parameters is available at the Album [documentation](https://docs.album.solution
     )
 
 </details>
+</div>
 
 ---
 
@@ -65,7 +68,9 @@ Please note that only setting the versions of used libraries and other dependenc
 Caution: the `env_file` variable needs to be added as the dependencies' parameter of the setup block to be properly 
 recognized by the Album framework.
 
-**Task 2: Write a minimal solution which uses python 3.10.**
+<div class="task">
+<div class="task-title">Task 2 - Write a minimal solution which uses python 3.10</div>
+
 <details>
   <summary>Task 2 solution</summary>
 
@@ -85,6 +90,7 @@ recognized by the Album framework.
     )
 
 </details>
+</div>
 
 ---
 
@@ -94,7 +100,8 @@ Like the name lets you guess, the run method defines what the solution does when
 Simply define a method called run in your solution and add the parameter `run=run` into 
 your setup method does the magic.
 
-**Task 3: Add a run method to your solution. Let it simply print something for now.**
+<div class="task">
+<div class="task-title">Task 3 - Add a run method to your solution. Let it simply print something for now.</div>
 
 <details>
   <summary>Task 3 solution</summary>
@@ -119,6 +126,7 @@ your setup method does the magic.
     )
 
 </details>
+</div>
 
 ---
 
@@ -139,7 +147,10 @@ defines one input argument of the solution. A single input argument could look s
 Note: To use the values of the input arguments in our run block, we need to import the get_args 
 method from the album_runner_api. Please make sure the import ins in the run definition and **NOT** on top of the file!
 
-**Task 4: Define an input argument for your solution and access its value in the run method and print it out.**
+**.**
+
+<div class="task">
+<div class="task-title">Task 4 - Define an input argument for your solution and access its value in the run method and print it out.</div>
 
 <details>
   <summary>Task 4 solution</summary>
@@ -170,6 +181,7 @@ method from the album_runner_api. Please make sure the import ins in the run def
     )
 
 </details>
+</div>
 
 ---
 
@@ -220,10 +232,10 @@ setup(
    "description": "How to you want to be addressed?"
    }]
 )
-
 ```
 
-**Task 5: Let your solution inherit the environment of the "template-python" solution-template of Album.**
+<div class="task">
+<div class="task-title">Task 5 - Let your solution inherit the environment of the "template-python" solution-template of Album.</div>
 
 <details>
   <summary>Task 5 solution</summary>
@@ -248,6 +260,8 @@ setup(
     )
 
 </details>
+</div>
+
 
 ---
 

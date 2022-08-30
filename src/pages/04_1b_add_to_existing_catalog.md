@@ -18,7 +18,9 @@ But you can also deploy your solution into an already existing catalog.
 
 Like for example the catalog of a coworker, the group you work in or the institute you work for.
 
-The following steps will show you how to do this!
+
+<div class="task">
+<div class="task-title">Task 1 - Get access to a target catalog that is not yours and deploy a solution. Work in groups if needed. </div>
 
 1. Request access to the target catalog:
    - To be able to deploy a solution into a catalog your git user needs the permission to write into the git
@@ -37,3 +39,4 @@ The following steps will show you how to do this!
    album update [catalog-name]
    album upgrade [catalog-name]
    ```
+</div>

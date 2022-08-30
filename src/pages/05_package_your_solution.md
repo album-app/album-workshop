@@ -17,6 +17,10 @@ Learning objectives:
 If you want to share your solution with others in a single file you can use the "package" plugin of Album.
 The plugin creates an executable which will install Album and your solution.
 
+<div class="task">
+<div class="task-title">Task 1 - Follow the steps to package your solution.</div>
+
+
 1. Activate the Album environment:
 
     1. If you installed Album with the Album installation wizard use one of the following commands to activate your
@@ -48,3 +52,4 @@ The plugin creates an executable which will install Album and your solution.
     - NOTE: The created executable will only work for systems running the same operating system as you. If you want to
       share the solution in packaged form with a user using a different operating system then you, the solution needs to
       be packaged on a system running the same operating system as the user you want to share the solution with.
+</div>
