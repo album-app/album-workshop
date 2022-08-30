@@ -4,49 +4,55 @@ title: "4.1a Create and populate a remote catalog"
 description: "In this section of the workshop you will create a remote catalog living on Gitlab and deploy the solution
 you wrote in the previous sections of the workshop into it."
 ---
+Learning objectives:
+- learn about catalog types
+- create your own gitlab or github catalog.
+- deploy a solution to the catalog
+- learn how to update catalogs
+---
 
-Now that you have written your first solution, it's time to share it with the world. For sharing solutions album uses so
-called catalogs. Catalogs are repositorys collecting solutions. They can live locally on your hard drive or in a remote
-Git repository, hosted for example on Gitlab or GitHub. There are two different types of catalogs:
+Now that you have written your first solutions, it is time to share it with the world!
+As you know from before, Album uses catalogs to share solutions.
+Catalogs are Git repositories collecting solutions.
+They can live locally on your hard drive or in a remote Git repository, hosted for example on Gitlab or GitHub. 
+
+In general, there are two different types of catalogs:
 
 1. direct catalogs:
-    - Changes to a direct catalog will be immediately accessible to anyone who uses this catalog. The changes are
-      directly pushed to the `main` branch of the catalog repository.
+    - When deploying (registering) a solution to a direct catalog it will be immediately accessible to anyone who uses this catalog.
 2. request catalogs:
-    - Changes to a request catalog have to be reviewed by the admins of the catalog, e.g. the Maintainer of the catalog
-      repository. the changes are pushed to a new branch of the repository, which has to be merged into the `main`
-      branch of the repository to make the changes accessible to the catalog users. Album provides a Gitlab CI script
-      which automatically creates a merge request for your changes and supports Zenodo DOI generation.
+    - Solutions deployed to a request catalog have to be reviewed by the administrators of the catalog (e.g. the Maintainer of the catalog
+      repository)
+    - After successfull review they can be added to the catalog.
 
-The following steps are showing the creation of direct catalog hosted on Gitlab and the deployment of a solution into
-it.
+The following steps show hwo to create a direct catalog hosted on Gitlab and deploy a solution to it.
 
-1. Create an empty repository
+1. Create an empty repository:
     - Log in into your preferred Git instance and create an empty repository.
       ![create_blank](https://gitlab.com/album-app/album-workshop/-/raw/main/static/choose_blank_circle.jpg)
       ![create_keys](https://gitlab.com/album-app/album-workshop/-/raw/main/static/new_repo_creation_fields.jpg)
-2. Clone the repository and apply the album catalog structure
-    - After you created the repository run the following command to clone the repository to your local hard drive and
-      apply the album catalog structure to it
+2. Use Album to clone the repository:
+    - This automatically initializes the repository to become a catalog
       ```
       album clone template:catalog [repo-url] [catalog-name]
       ```
-3. Add the newly created catalog to your collection
-    - For album to recognise your new catalog you have to add it to your local collection of catalogs with the following
+3. Add the newly created catalog to your collection:
+    - For Album to recognise your new catalog you have to add it to your local collection of catalogs with the following
       command:
       ```
       album add-catalog [repo-url]
       ```
-4. Deploy your solution into the catalog
-    - With the fresh catalog and your solution at hand it is now time to add your solution to the remote catalog. Run
-      the following command:
+4. Deploy your solution into the catalog:
+    - Simply run the following command:
       ```
       album deploy [solution-path] [catalog-name]
       ```
 5. Upgrade your local version of the catalog
-    - Your solution is now part of the remote catalog, but not part of your local version of the catalog. To synchronise
-      your local catalog with the remote one, run the following commands:
+    - Your solution is now part of the remote catalog (e.g. check it in github/gitlab). To synchronise
+      your local catalog managed by Album with the remote, run the following commands:
       ```
       album update [catalog-name]
       album upgrade [catalog-name]
       ```
+      
+That's it! You created a ready to use catalog and can deploy solutions into it! 

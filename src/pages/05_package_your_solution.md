@@ -4,9 +4,12 @@ title: "5. package a solution"
 description: "In this section you will learn how to package your solution into an executable, which installs your
 solution on other systems so you can easily share your solution with others."
 ---
+Learning objectives:
+- learn how to package your solutions
+---
 
-If you want to share your solution with others but don't want them to need to install album and conda first
-you can use the package plugin of album to create an executable which will install conda, album and your solution.
+If you want to share your solution with others in a single file you can use the "package" plugin of Album.
+The plugin creates an executable which will install Album and your solution.
 
 1. Activate the Album environment:
 
