@@ -4,12 +4,16 @@ title: "2. Run a solution from the Helmholtz Imaging Solutions catalog"
 description: "You will learn how to install Album and run an existing solution from a catalog."
 ---
 
+<div class="learning-objectives">
 Learning objectives:
-- Get introduced to Helmholtz Imaging Solutions.
-- Learn how to install Album.
-- Learn how to use Album from the command line.
-- Learn how to run a solution from a catalog that someone might share with you via URL.
-- Learn how to get an overview of available solutions, online and locally.
+<ul>
+<li>Get introduced to Helmholtz Imaging Solutions.</li>
+<li>Learn how to install Album.</li>
+<li>Learn how to use Album from the command line.</li>
+<li>Learn how to run a solution from a catalog that someone might share with you via URL.</li>
+<li>Learn how to get an overview of available solutions, online and locally.</li>
+</ul>
+</div>
 
 ---
 
@@ -20,19 +24,24 @@ Album is developed by [Helmholtz Imaging](https://helmholtz-imaging.de) in order
 The catalog we will explore in this section represents our collection of solutions issued from collaborations, help desk inquiries and projects. 
 The tools used there are not all developed by us. Please respect the citations on each solution for credits. 
 
-**Task 1 - browsing a catalog online**
 
-Browse through the Helmholtz Imaging Catalog via https://album-app.gitlab.io/catalogs/helmholtz-imaging/catalog.
+<div class="task">
+<div class="task-title">Task 1 - browsing a catalog online</div>
+Browse through the <a href="https://album-app.gitlab.io/catalogs/helmholtz-imaging/catalog" target="_blank">Helmholtz Imaging Solutions Catalog</a>.
+</div>
 
 ---
 
 Someone shared a specific solution with you by sending you a URL. Album should make it as painless as possible to run the same algorithm on your own data.
 
-**Task 2 - running a solution from a catalog**
-
-1. Read about what the solution does on the solution URL: https://album-app.gitlab.io/catalogs/helmholtz-imaging/de.mdc-berlin/pixel-to-mesh/0.1.0-SNAPSHOT
-2. Pick a 3D dataset - ideally a segmentation. You can download and use [this example dataset](https://gitlab.com/album-app/album-workshop/-/raw/main/static/example_input.tif) or use your own 3D dataset
-3. Run the solution on your dataset by following the instructions on the solution URL.
+<div class="task">
+<div class="task-title">Task 2 - running a solution from a catalog</div>
+<ol>
+<li>Inform yourself about the solution by following <a href="https://album-app.gitlab.io/catalogs/helmholtz-imaging/de.mdc-berlin/pixel-to-mesh/0.1.0-SNAPSHOT" target="_blank">this solution URL.</a></li>
+<li>Pick a 3D dataset - ideally a segmentation. You can download and use <a href="https://gitlab.com/album-app/album-workshop/-/raw/main/static/example_input.tif">this example dataset</a> or use your own 3D dataset</li>
+<li>Run the solution on your dataset by following the instructions on the solution URL.</li>
+</ol>
+</div>
 
 All instructions, including how to install Album, should be linked and easily accessible from the solution page. If any information is missing or difficult to follow, please leave a comment below.
 
@@ -41,11 +50,12 @@ All instructions, including how to install Album, should be linked and easily ac
 After installing Album and adding the Helmholtz Imaging Solutions catalog all solutions in this catalog are listed in your local Album collection.  
 By now, you should be able to call `album` commands from the command line. 
 
-**Task 3 - inspect local installation**
-1. Inspect your local installation by calling this command:
-```
-album index
-```
+<div class="task">
+<div class="task-title">Task 3 - inspect local installation</div>
+Inspect your local installation by calling this command:
+<pre><code>album index
+</code></pre>
+</div>
 
 ---
 
