@@ -3,11 +3,17 @@ slug: "/solution_writing"
 title: "3. Writing a solution"
 description: "This section explains how to write, install and run an Album solution."
 ---
+
+<div class="learning-objectives">
 Learning objectives:
-- learn how to write a solution from scratch
-- learn what is necessary to let a solution execute something when run
-- learn how to add arguments to your solution
-- learn how to let solutions inherit from each other
+<ul>
+<li>learn how to write a solution from scratch</li>
+<li>learn what is necessary to let a solution execute something when run</li>
+<li>learn how to add arguments to your solution</li>
+<li>learn how to let solutions inherit from each other</li>
+</ul>
+</div>
+
 ---
 
 Before we can start to write a solution we first need to take a look at the basic building parts of a solution. The

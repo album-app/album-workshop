@@ -3,8 +3,14 @@ slug: "/add_to_catalog"
 title: "4.1b Add your solution to an existing catalog"
 description: "You will learn how to deploy a solution to an existing catalog."
 ---
+
+<div class="learning-objectives">
 Learning objectives:
-- learn what is necessary to deploy to a catalog managed by someone else.
+<ul>
+<li>learn what is necessary to deploy to a catalog managed by someone else.</li>
+</ul>
+</div>
+
 ---
 
 In the last section you learned how to create your own remote catalog and deploy a solution to it.

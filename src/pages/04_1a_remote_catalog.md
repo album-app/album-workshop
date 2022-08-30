@@ -4,11 +4,17 @@ title: "4.1a Create and populate a remote catalog"
 description: "In this section of the workshop you will create a remote catalog living on Gitlab and deploy the solution
 you wrote in the previous sections of the workshop into it."
 ---
+
+<div class="learning-objectives">
 Learning objectives:
-- learn about catalog types
-- create your own gitlab or github catalog.
-- deploy a solution to the catalog
-- learn how to update catalogs
+<ul>
+<li>learn about catalog types</li>
+<li>create your own gitlab or github catalog.</li>
+<li>deploy a solution to the catalog</li>
+<li>learn how to update catalogs</li>
+</ul>
+</div>
+
 ---
 
 Now that you have written your first solutions, it is time to share it with the world!

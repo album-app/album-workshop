@@ -3,11 +3,16 @@ slug: "/concepts"
 title: "1. Concepts of album"
 description: "This section provides an introduction into why Album exists and what it's aiming to solve."
 ---
+
+<div class="learning-objectives">
 Learning objectives:
-- learn what problem is being solved with Album
-- learn how working with Album looks like
-- learn about the motivation for Album with example
-- have a glance into the technical aspects [optional]
+<ul>
+<li>learn what problem is being solved with Album</li>
+<li>learn how working with Album looks like</li>
+<li>learn about the motivation for Album with example</li>
+<li>have a glance into the technical aspects [optional]</li>
+</ul>
+</div>
 ---
 ## Motivation
 

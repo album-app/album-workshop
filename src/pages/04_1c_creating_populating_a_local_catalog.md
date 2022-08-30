@@ -3,8 +3,13 @@ slug: "/local_catalog"
 title: "4.1c Create and populate a local catalog"
 description: "You will learn how to setup a local catalog, for example on a network drive, and how to deploy your solution into it."
 ---
+<div class="learning-objectives">
 Learning objectives:
-- learn how to share a catalog without a URL
+<ul>
+<li>learn how to share a catalog without a URL</li>
+</ul>
+</div>
+
 ---
 
 

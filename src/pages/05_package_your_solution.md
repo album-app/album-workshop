@@ -4,8 +4,14 @@ title: "5. package a solution"
 description: "In this section you will learn how to package your solution into an executable, which installs your
 solution on other systems so you can easily share your solution with others."
 ---
+
+<div class="learning-objectives">
 Learning objectives:
-- learn how to package your solutions
+<ul>
+<li>learn how to package your solutions and easily share it</li>
+</ul>
+</div>
+
 ---
 
 If you want to share your solution with others in a single file you can use the "package" plugin of Album.
