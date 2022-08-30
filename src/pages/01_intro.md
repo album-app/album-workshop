@@ -9,11 +9,12 @@ Learning objectives:
 <ul>
 <li>learn what problem is being solved with Album</li>
 <li>learn how working with Album looks like</li>
-<li>learn about the motivation for Album with example</li>
+<li>learn about the motivation for Album</li>
 <li>have a glance into the technical aspects [optional]</li>
 </ul>
 </div>
 ---
+
 ## Motivation
 
 Often, researchers are confronted with the problem of how to solve a certain problem for which they know a
