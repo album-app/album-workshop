@@ -28,7 +28,8 @@ return (
     <div className="description">{snippet.frontmatter.description}</div>
     <div dangerouslySetInnerHTML={{ __html: snippet.html }}/>
     <div className="feedback">
-        <b>Congratulations, you finished this section of our workshop!</b><br/>
+        <b>Congratulations, you finished this section of our workshop, please let us know!</b><br/><br/>
+        Just leave a comment in the box below after signing in with GitHub. Any feedback is highly appreciated.<br/><br/>
         <Comment commentBox={commentBox} />
     </div>
 </div>
