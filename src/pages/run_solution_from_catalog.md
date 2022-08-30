@@ -18,7 +18,7 @@ Browse through the Helmholtz Imaging Catalog via https://album-app.gitlab.io/cat
 
 Run this solution: https://album-app.gitlab.io/catalogs/helmholtz-imaging/de.mdc-berlin/pixel-to-mesh/0.1.0-SNAPSHOT
 
-As an input, you can download [this file](TODO.tif) or use your own 3D dataset, ideally a segmentation.
+As an input, you can download and use [this example dataset](https://gitlab.com/album-app/album-workshop/-/raw/main/static/example_input.tif) or use your own 3D dataset, ideally a segmentation.
 
 All instructions, including how to install Album, should be available from the solution page. If any information is missing or difficult to follow, please leave a comment below.
 
