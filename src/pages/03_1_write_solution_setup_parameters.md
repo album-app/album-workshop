@@ -18,7 +18,7 @@ Group, name and version are used as the solution identifiers. Other parameter ca
 to your solution like for example the creator of the solution or a brief description of the solution. A full list of
 parameters is available at the Album [documentation](https://docs.album.solutions/en/latest/solution-development.html).
 
-Task 1: Write a solution with the minimal configuration.
+**Task 1: Write a solution with the minimal configuration.**
 <details>
   <summary>Task 1 solution</summary>
 
@@ -31,6 +31,8 @@ Task 1: Write a solution with the minimal configuration.
     )
 
 </details>
+
+---
 
 The next part of a solution we are going to look at is the environment string. It defines the environment in which the
 solution should be run and therefore defines which versions of programs and libraries will be used. It looks something
