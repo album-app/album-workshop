@@ -25,7 +25,7 @@ In general, there are two different types of catalogs:
       repository)
     - After successfull review they can be added to the catalog.
 
-The following steps show hwo to create a direct catalog hosted on Gitlab and deploy a solution to it.
+Perform the following steps that show you how to create a direct catalog hosted on Gitlab and deploy a solution to it.
 
 1. Create an empty repository:
     - Log in into your preferred Git instance and create an empty repository.
