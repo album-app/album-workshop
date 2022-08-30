@@ -41,7 +41,7 @@ All instructions, including how to install Album, should be linked and easily ac
 After installing Album and adding the Helmholtz Imaging Solutions catalog all solutions in this catalog are listed in your local Album collection.  
 By now, you should be able to call `album` commands from the command line. 
 
-**Task 3 - inpect local installation**
+**Task 3 - inspect local installation**
 1. Inspect your local installation by calling this command:
 ```
 album index
