@@ -1,7 +1,13 @@
 ---
 slug: "/concepts"
-title: "1 Concepts of album"
+title: "1. Concepts of album"
 description: "This section provides an introduction into why Album exists and what it's aiming to solve."
+---
+Learning objectives:
+- learn what problem is being solved with Album
+- learn how working with Album looks like
+- learn about the motivation for Album with example
+- have a glance into the technical aspects [optional]
 ---
 ## Motivation
 
@@ -92,14 +98,26 @@ And something like this happens. And it is not uncommon. So to make sure the sci
 used by someone else without introducing errors simply because old versions or faulty libraries were 
 used - we should care about reproducibility!
 
-What result do you get for the code above? Try ot out!
 
-Throughout this course you will learn how to avoid mistakes like the one above. 
+So it would be better to specify with the code what requirements are needed. In pseudocode something like this:
+
+```
+with python=3.8.8,matplotlib==3.5.3, scikit-image==0.19.2:
+    import libraries
+    create or laod image
+        
+    for number "i" 1 to 6::
+        plot rotated image with interpolation order "i" 
+    
+```
+
+Throughout this course you will learn how to use Album to bring together the code above with a versioned requirements 
+that suit the pseudocode example.
 
 ## Technical concepts [optional]
 
 OK, How would something like this framework even work? 
 
-If you are interested in the technical concept have a look at the following schema.
+If you are interested in the technical concept have a look at the following schema. 
 
 ![solution distribution](https://gitlab.com/album-app/album-workshop/-/raw/main/static/album-schema.png)
