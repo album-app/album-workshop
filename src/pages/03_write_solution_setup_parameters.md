@@ -15,6 +15,10 @@ Learning objectives:
 </div>
 
 ---
+In this chapter you will finally write your own solutions. For that you can use any word processing program
+but we recommend you to at least choose a program that supports python syntax highlighting. 
+Windows users can use for example [notepad++](https://notepad-plus-plus.org/), linux and mac users could use
+[sublime](https://www.sublimetext.com/). Make sure you have a developer tool of your choice installed before you move on.
 
 Before we can start to write a solution we first need to take a look at the basic building parts of a solution. The
 first and most important block is the setup method. 
@@ -30,10 +34,14 @@ solution unique and executable.
 
 Group, name and version are used as the solution identifiers. Other parameter can be used to add more meta information
 to your solution like for example the creator of the solution or a brief description of the solution. A full list of
-parameters is available at the Album [documentation](https://docs.album.solutions/en/latest/solution-development.html).
+parameters is available at the Album [documentation](https://docs.album.solutions/en/latest/solution-development.html#setup-parameters).
+
+In the following you will get asked to solve specific tasks.
+After you finished a task you can expand the solution and compare it to your version. Not always is the given solution 
+the only way to solve a task.
 
 <div class="task">
-<div class="task-title">Task 1 - Write a solution with the minimal configuration</div>
+<div class="task-title">Task 1 - Write a solution named "solution.py" with the minimal configuration</div>
 
 <details>
   <summary>Task 1 - solution</summary>
@@ -150,7 +158,7 @@ method from the album_runner_api. Please make sure the import ins in the run def
 **.**
 
 <div class="task">
-<div class="task-title">Task 4 - Define an input argument for your solution and access its value in the run method and print it out.</div>
+<div class="task-title">Task 4 - Define an input argument called "name" for your solution and access its value in the run method and print it out.</div>
 
 <details>
   <summary>Task 4 solution</summary>
@@ -212,27 +220,18 @@ For that a solution can inherit the environment block of another solution.
 Simply reference the solution you want to inherit the environment from in the dependencies block of your new solution.
 This can be done by adding the parent solution identifier (group:name:version) to the dependency dictionary in the setup.
 
-The parent solution needs to be installed (or needs to be part of your collection - you will learn about that later)
-in order to pass their environment on.
-
+It could look something like this:
 ```python
-setup(
-   group="my-research-group",
-   name="projectxy",
-   version="0.1.0",
-   album_api_version="0.4.2",
-   dependencies={
-      "parent": {
-    "resolve_solution": "album:template-python:0.1.0"
-   }
-   },
-   args=[{
-   "name": "name",
-   "type": "string",
-   "description": "How to you want to be addressed?"
-   }]
-)
+dependencies={
+  "parent": {
+        "resolve_solution": "album:template-python:0.1.0"
+    }
+}
 ```
+
+Please note that the parent solution needs to be part of your collection in order to pass their environment on. 
+(e.g. it must be installable) 
+
 
 <div class="task">
 <div class="task-title">Task 5 - Let your solution inherit the environment of the "template-python" solution-template of Album.</div>
