@@ -1,6 +1,6 @@
 ---
 slug: "/remote_catalog"
-title: "4.1a Create and populate a remote catalog"
+title: "4a Create and populate a remote catalog"
 description: "In this section of the workshop you will create a remote catalog living on Gitlab and deploy the solution
 you wrote in the previous sections of the workshop into it."
 ---
@@ -40,21 +40,23 @@ In general, there are two different types of catalogs:
       ![create_blank](https://gitlab.com/album-app/album-workshop/-/raw/main/static/choose_blank_circle.jpg)
       ![create_keys](https://gitlab.com/album-app/album-workshop/-/raw/main/static/new_repo_creation_fields.jpg)
 2. Use Album to clone the repository:
-    - This automatically initializes the repository to become a catalog
+    - This automatically initializes the repository to become a catalog.
+    - Please make sure your repo URL ends with ".git"
       ```
       album clone template:catalog [repo-url] [catalog-name]
       ```
 3. Add the newly created catalog to your collection:
-    - For Album to recognise your new catalog you have to add it to your local collection of catalogs with the following
-      command:
+    - For Album to recognise your new catalog you have to add it to your local collection of catalogs 
+      with the following command:
       ```
       album add-catalog [repo-url]
       ```
 4. Deploy your solution into the catalog:
-    - Simply run the following command:
-      ```
-      album deploy [solution-path] [catalog-name]
-      ```
+   - You can now address your catalog by the name you chose in step 2 and deploy solutions to it
+   - Simply run the following command:
+     ```
+     album deploy [solution-path] [catalog-name]
+     ```
 5. Upgrade your local version of the catalog
     - Your solution is now part of the remote catalog (e.g. check it in github/gitlab). To synchronise
       your local catalog managed by Album with the remote, run the following commands:

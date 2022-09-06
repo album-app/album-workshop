@@ -127,3 +127,8 @@ OK, How would something like this framework even work?
 If you are interested in the technical concept have a look at the following schema. 
 
 ![solution distribution](https://gitlab.com/album-app/album-workshop/-/raw/main/static/album-schema.png)
+
+Here is what you need to take away from that:
+- the collection gathers all catalogs and their solutions
+- catalogs hold solutions and are git repositories that can exist on github/gitlab or anywhere on a drive
+- each solution has its own environment (or inherits its environment from another solution)
