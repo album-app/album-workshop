@@ -98,8 +98,10 @@ Now imagine someone else is using the **exact same code** - but his results look
 
 What happened?
 
-Since there is no specification of any versions of the used packages known bugs like this change the results. 
-Sometimes even drastically!
+Simply said, these code was run each with different dependency versions installed (in this case scikit-image).
+
+Since there is no specification of any versions of the used packages in the code above known bugs like this change
+the results. Sometimes even drastically!
 
 And something like this happens. And it is not uncommon. So to make sure the scientific results you produced can be
 used by someone else without introducing errors simply because old versions or faulty libraries were 
@@ -118,8 +120,7 @@ with python=3.8.8,matplotlib==3.5.3, scikit-image==0.19.2:
     
 ```
 
-Throughout this course you will learn how to use Album to bring together the code above with a versioned requirements 
-that suit the pseudocode example.
+Throughout this course you will learn how to use Album and solve the problem from above.
 
 ## Technical concepts [optional]
 
@@ -130,6 +131,6 @@ If you are interested in the technical concept have a look at the following sche
 ![solution distribution](https://gitlab.com/album-app/album-workshop/-/raw/main/static/album-schema.png)
 
 Here is what you need to take away from that:
-- the collection gathers all catalogs and their solutions
-- catalogs hold solutions and are git repositories that can exist on github/gitlab or anywhere on a drive
+- the collection gathers all catalogs and their solutions at one place
+- catalogs hold solutions and are git repositories that can exist on github/gitlab or anywhere on a (network)-drive
 - each solution has its own environment (or inherits its environment from another solution)
