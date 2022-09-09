@@ -72,7 +72,7 @@ return (
     <div className="line" id="installer-line">
         <div className="dummy"/>
         <div>
-            <h2 className="center">Installation</h2>
+            <h3 className="center">Installation</h3>
             <div className="line">
                 {getSnippetDiv(pageContext.snippets, "install_gui")}
                 {getSnippetDiv(pageContext.snippets, "install_commandline")}
@@ -93,7 +93,7 @@ return (
             {getComingSoonDiv(pageContext.snippets, "solutions_in_the_cloud")}
         </div>
         <div id="sharing_via_catalogs" className="flex-more">
-            <h2 className="center">Sharing solutions via catalogs</h2>
+            <h3 className="center">Sharing solutions via catalogs</h3>
             <div>
                 {getSnippetDiv(pageContext.snippets, "remote_catalog")}
                 {getSnippetDiv(pageContext.snippets, "add_to_catalog")}

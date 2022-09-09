@@ -64,11 +64,13 @@ setup(
 {`    name="template-python",`}</CodeWithNote>
 <CodeWithNote highlight='version' note='The version of the solution. Note that the -SNAPSHOT convention is used to indicate a version is not yet final.'>
 {`    version="0.2.0",`}</CodeWithNote>
+<CodeWithNote highlight='album_api_version' note='The version of the album runner compatible with this solution code.'>
+{`    album_api_version="0.5.2",`}</CodeWithNote>
 <CodeWithNote highlight='title' note='The title of the solution.'>
 {`    title="Python template",`}</CodeWithNote>
 <CodeWithNote highlight='description' note='This is a short description of the specific solution.'>
 {`    description="An album solution template for running Python code.",`}</CodeWithNote>
-<CodeWithNote highlight='authors' note='These are the authors of the solution [list of strings]'>
+<CodeWithNote highlight='solution_creators' note='These are the creators of the solution [list of strings]'>
 {`    authors=["Your name"],`}</CodeWithNote>
 <CodeWithNote highlight='cite' note='This is a list of dictionaries that specify the citations associated with this solution file.'>
 {`    cite=[{`}</CodeWithNote>
@@ -88,8 +90,6 @@ setup(
         "description": "Dummy cover image.",
         "source": "cover.png"
     }],`}</CodeWithNote>
-<CodeWithNote highlight='album_api_version' note='The version of the album runner compatible with this solution code.'>
-{`    album_api_version="0.3.1",`}</CodeWithNote>
 <CodeWithNote highlight='args' note='The arguments that can be (and may be required) to run the specific solution.'>
 {`    args=[{`}</CodeWithNote>
 <CodeWithNote highlight='name' note='The name of the solution argument.'>
