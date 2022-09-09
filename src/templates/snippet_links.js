@@ -49,7 +49,7 @@ const SnippetsTemplate = ({ pageContext }) => {
 return (
   <Layout site={pageContext.site}>
   <div className="line">
-        <div className="flex-middle">
+        <div id="album-intro" className="flex-middle">
             <div>
                 {getBoxDiv(pageContext.snippets, "more-information")}
                 {getSnippetDiv(pageContext.snippets, "background")}
@@ -59,19 +59,17 @@ return (
     </div>
     <div className="line">
         {getBoxDiv(pageContext.snippets, "browse_catalogs")}
-        {getSnippetDiv(pageContext.snippets, "concepts")}
-        {getBoxDiv(pageContext.snippets, "share_solutions")}
-    </div>
-    <div className="line" id="installer-line">
-        <div className="dummy"/>
         <div>
-            <h3 className="center">Installation</h3>
-            <div className="line">
-                <Link id="install_gui" className="snippet-link intro-box" to="/install_gui"><div>graphical interface</div><IconGui/></Link>
-                <Link id="install_commandline" className="snippet-link intro-box" to="https://docs.album.solutions/"><div>command line</div><IconTerminal/></Link>
+            {getSnippetDiv(pageContext.snippets, "concepts")}
+            <div id="installer-line">
+                <h3 className="center">Installation</h3>
+                <div className="line">
+                    <Link id="install_gui" className="snippet-link intro-box" to="/install_gui"><div>graphical interface</div><IconGui/></Link>
+                    <Link id="install_commandline" className="snippet-link intro-box" to="https://docs.album.solutions/"><div>command line</div><IconTerminal/></Link>
+                </div>
             </div>
         </div>
-        <div className="dummy"/>
+        {getBoxDiv(pageContext.snippets, "share_solutions")}
     </div>
     <div className="line">
         <div className="dummy"/>

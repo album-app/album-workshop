@@ -19,22 +19,22 @@ h2 {
 }
 
 .header {
-    align-self: flex-start;
     display: flex;
     align-items: center;
     padding: 0 20px;
+    max-width: 440px;
 }
 
 .header-text {
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: stretch;
 }
 
 .header-text > a {
-    padding: 10px;
+    text-align: left;
     color: black;
+    line-height: 1.1;
 }
 
 .header-menu {
@@ -43,7 +43,12 @@ h2 {
 }
 
 .header-title {
-    font-size: 150%;
+    font-size: 120%;
+}
+
+.header-logo {
+    width:60px;
+    min-width:60px;
 }
 
 .header-subtitle {
@@ -54,13 +59,11 @@ h2 {
 }
 
 .root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .main {
-    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -224,7 +227,6 @@ h2 {
     margin: 10px;
     display: flex;
     align-items: center;
-    min-width: 300px;
     max-width: 400px;
 }
 
@@ -285,6 +287,8 @@ h2 {
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .line .intro-box {
@@ -416,13 +420,13 @@ ul.catalogs > li {
 }
 
 .solution-example-code {
-  align-self: stretch;
+  align-self: center;
   background: rgba(0,0,0,.8);
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin: 0 40px;
   border-radius: 20px;
+  max-width: 800px;
 }
 
 .coming-soon {
@@ -440,8 +444,12 @@ ul.catalogs > li {
     text-align: right;
 }
 
-#installer-line .dummy {
-    flex:10;
+#installer-line {
+    margin-top: 40px;
+}
+
+#installer-line .line {
+    flex-wrap: nowrap;
 }
 
 #install_commandline {
@@ -471,7 +479,7 @@ ul.catalogs > li {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: stretch;
+    align-items: center;
     text-align: right;
     overflow: hidden;
     margin: 0;
@@ -487,6 +495,10 @@ ul.catalogs > li {
     justify-content: center;
     align-items: center;
     margin: 10px 10px 10px 0;
+}
+
+.link-header {
+    display: flex;
 }
 
 .affiliation {
@@ -538,4 +550,39 @@ ul.catalogs > li {
 .next-step .arrow {
     font-size: 200%;
     margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+    .leader-line {
+        display: none;
+    }
+    .flex-middle, .flex-more, .line .intro-box, .line > div {
+        min-width: 80%;
+        align-self: stretch;
+        margin: 10px 0;
+    }
+    .dummy {
+        display: none;
+    }
+    #browse_catalogs, #share_solutions, #sharing_via_catalogs {
+        margin: 10px 0;
+    }
+    #sharing_via_catalogs {
+        padding: 0;
+    }
+    .line {
+        margin: 0px;
+    }
+    #installer-line .intro-box {
+        margin: 5px;
+    }
+    #album-intro {
+        order: 2;
+    }
+    #browse_catalogs {
+        order: 2;
+    }
+    #share_solutions {
+        order: 3;
+    }
 }

@@ -8,22 +8,22 @@ var attrs_info = {
 }
 
 // This function is called when the page is cleared. (form is submitted)
-function connect(start, end, startSocket='bottom', endSocket='top') {
+function connect(start, end, startSocket='bottom', endSocket='top', path='fluid') {
     startObj = document.getElementById(start)
     endObj = document.getElementById(end)
     console.log(startObj)
     console.log(endObj)
     if(startObj != null && endObj != null) {
     console.log("adding line")
-        new LeaderLine(startObj, endObj, {color: color, startSocket: startSocket, endSocket: endSocket});
+        new LeaderLine(startObj, endObj, {color: color, startSocket: startSocket, endSocket: endSocket, path: path});
     }
 }
 
 function addAllLines() {
-    connect('concepts', 'background', 'top', 'right')
-    connect('concepts', 'browse_catalogs', 'left', 'right')
-    connect('concepts', 'share_solutions', 'right', 'left')
-    connect('concepts', 'installer-line')
+    connect('background', 'concepts', 'right', 'top')
+//    connect('concepts', 'browse_catalogs', 'left', 'right')
+//    connect('concepts', 'share_solutions', 'right', 'left')
+//    connect('concepts', 'installer-line')
     connect('browse_catalogs', 'run_solution_from_catalog')
     connect('share_solutions', 'solution_writing')
     connect('solution_writing', 'sharing_via_catalogs')
