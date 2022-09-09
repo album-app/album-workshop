@@ -44,15 +44,6 @@ const makeBox = (classId, className, title, subtitle, description, content) => {
 }
 
 const SnippetsTemplate = ({ pageContext }) => {
-const leaderLineBox = React.createRef()
-  useEffect(() => {
-    const scriptEl = document.createElement('script')
-    scriptEl.src = withPrefix('leader-line.min.js')
-    if (leaderLineBox && leaderLineBox.current) {
-      leaderLineBox.current.appendChild(scriptEl)
-    }
-  }, [])
-
 return (
   <Layout site={pageContext.site}>
   <div className="line">
@@ -105,7 +96,6 @@ return (
         <div/>
         {getComingSoonDiv(pageContext.snippets, "packaging-coming-soon")}
     </div>
-    <div ref={leaderLineBox}></div>
     <h2>Repositories / releases</h2>
     <Badges/>
     <h2 id="list-of-catalogs">List of catalogs</h2>

@@ -6,9 +6,10 @@ import "@fontsource/ubuntu"
 import "../css/layout.css"
 import "../css/base-theme.css"
 import "../css/theme.css"
+import ApplyArrows from "../components/apply-arrows"
+import { useLocation } from '@reach/router'
 
-const Layout = ({ site, children }) => {
-console.log(site)
+const Layout = ({ site, children, location }) => {
   return (
     <>
     <Helmet
@@ -27,6 +28,7 @@ console.log(site)
             </div>
         </div>
     </div>
+    <ApplyArrows location={useLocation()}/>
     </>
   )
 }
