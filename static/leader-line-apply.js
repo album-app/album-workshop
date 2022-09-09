@@ -20,18 +20,15 @@ function connect(start, end, startSocket='bottom', endSocket='top') {
 }
 
 function addAllLines() {
-    console.log("adding all lines");
-    //new LeaderLine(document.getElementById('album'), document.getElementById('concepts'), attrs);
     connect('concepts', 'background', 'top', 'right')
-    //new LeaderLine(document.getElementById('concepts'), document.getElementById('background'), {color: color, startSocket: 'top', endSocket: 'right'});
-    //new LeaderLine(document.getElementById('concepts'), document.getElementById("browse_catalogs"), {color: color, startSocket: 'left', endSocket: 'right'});
-    //new LeaderLine(document.getElementById('concepts'), document.getElementById("share_solutions"), {color: color, startSocket: 'right', endSocket: 'left'});
-    //new LeaderLine(document.getElementById('concepts'), document.getElementById("installer-line"), attrs);
-    //new LeaderLine(document.getElementById('browse_catalogs'), document.getElementById("run_solution_from_catalog"), attrs);
-    //new LeaderLine(document.getElementById('share_solutions'), document.getElementById("solution_writing"), attrs);
-    //new LeaderLine(document.getElementById('run_solution_from_catalog'), document.getElementById("solutions_data_workflows"), {color: color, startSocket: 'bottom', endSocket: 'top'});
-    //new LeaderLine(document.getElementById('solution_writing'), document.getElementById("sharing_via_catalogs"), attrs);
-    //new LeaderLine(document.getElementById('local_catalog'), document.getElementById("packaging-coming-soon"), attrs);
+    connect('concepts', 'browse_catalogs', 'left', 'right')
+    connect('concepts', 'share_solutions', 'right', 'left')
+    connect('concepts', 'installer-line')
+    connect('browse_catalogs', 'run_solution_from_catalog')
+    connect('share_solutions', 'solution_writing')
+    connect('solution_writing', 'sharing_via_catalogs')
+    connect('local_catalog', 'packaging-coming-soon')
+    connect('run_solution_from_catalog', 'solutions_data_workflows', 'bottom', 'top')
 }
 
 function clearLines() {
