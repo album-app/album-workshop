@@ -11,6 +11,8 @@ import Header from "../components/header"
 import Catalogs from "../components/catalogs"
 import CatalogsData from "../../catalogs.yml"
 import SolutionExample from "../components/solution-example"
+import IconGui from "../components/icon-gui"
+import IconTerminal from "../components/icon-terminal"
 
 const getSnippet = (snippets, snippetSlug) => {
     for(const snippet of snippets) {
@@ -65,8 +67,8 @@ return (
         <div>
             <h3 className="center">Installation</h3>
             <div className="line">
-                {getSnippetDiv(pageContext.snippets, "install_gui")}
-                {getSnippetDiv(pageContext.snippets, "install_commandline")}
+                <Link id="install_gui" className="snippet-link intro-box" to="/install_gui"><div>graphical interface</div><IconGui/></Link>
+                <Link id="install_commandline" className="snippet-link intro-box" to="https://docs.album.solutions/"><div>command line</div><IconTerminal/></Link>
             </div>
         </div>
         <div className="dummy"/>
