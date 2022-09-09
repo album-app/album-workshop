@@ -1,0 +1,7 @@
+- name: default
+  link: https://album-app.gitlab.io/catalogs/default/
+  album_url: https://gitlab.com/album-app/catalogs/default/
+  development: https://gitlab.com/album-app/catalogs/default-dev/
+  maintainers: the album team
+  description: by default added to album - includes solution templates
+  badge: https://gitlab.com/album-app/catalogs/default/badges/main/pipeline.svg

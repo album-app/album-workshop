@@ -2,6 +2,7 @@
 slug: "/concepts"
 title: "Why should you care?"
 description: "This section provides an introduction into why Album exists and what it's aiming to solve."
+next: ["run_solution_from_catalog", "solution_writing"]
 ---
 
 <div class="learning-objectives">
@@ -13,8 +14,6 @@ Learning objectives:
 <li>have a glance into the technical aspects [optional]</li>
 </ul>
 </div>
-
----
 
 ## Motivation
 

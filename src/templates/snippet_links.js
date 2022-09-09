@@ -108,7 +108,7 @@ return (
     <div ref={leaderLineBox}></div>
     <h2>Repositories / releases</h2>
     <Badges/>
-    <h2>List of catalogs</h2>
+    <h2 id="list-of-catalogs">List of catalogs</h2>
     {getBoxDiv(pageContext.snippets, "catalogs")}
     <Catalogs catalogs={CatalogsData} />
     <h2>Example solution</h2>

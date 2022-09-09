@@ -4,7 +4,7 @@ import Snippet from "../components/snippet"
 
 const SnippetsTemplate = ({ pageContext }) => (
   <Layout site={pageContext.site}>
-    <Snippet snippet={pageContext.snippet}/>
+    <Snippet snippet={pageContext.snippet} snippets={pageContext.snippets}/>
   </Layout>
 )
 

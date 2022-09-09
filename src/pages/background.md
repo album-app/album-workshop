@@ -2,6 +2,7 @@
 slug: "/background"
 title: "Who we are"
 description: "Read more about the backstory of Album."
+next: ["concepts"]
 ---
 Album is a tool for unifying computational tools across frameworks,
 languages, and environments. Although Album is an extension of a

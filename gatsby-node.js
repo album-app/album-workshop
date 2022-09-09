@@ -13,6 +13,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             slug
             title
             description
+            next
           }
         }
       }
@@ -36,7 +37,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: require.resolve("./src/templates/snippet.js"),
       context: {
         site: result.data.site,
-        snippet: page
+        snippet: page,
+        snippets: pages
       },
     })
   })

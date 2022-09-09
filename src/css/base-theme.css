@@ -196,6 +196,12 @@ div.solution-citation {
     color: #414144;
 }
 
+.snippet .description {
+    border-top: 2px dotted rgba(0,0,0,0.2);
+    padding: 5px 0;
+    border-bottom: 2px dotted rgba(0,0,0,0.2);
+}
+
 @media (max-width: 1360px) {
     .header-logo, .header .header-menu-item {
         border: 0;

@@ -255,10 +255,6 @@ h2 {
     margin-right: 20px;
 }
 
-.snippet {
-
-}
-
 .snippet-link {
     display: block;
     margin: 10px 0px;
@@ -277,14 +273,12 @@ h2 {
     margin-top: 50px;
     font-size: 110%;
     border-radius: 5px;
-    background: #212124;
     font-weight: normal;
-    color: white;
 }
 
 .feedback b {
-    color: #aaffaa;
-    font-size: 130%;
+    color: #dd0033;
+    font-size: 200%;
 }
 
 .line {
@@ -517,4 +511,31 @@ ul.catalogs > li {
 }
 .flex {
     flex: 1;
+}
+
+.next-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.next-steps h2 {
+    border: 0;
+}
+
+.next-steps h3 {
+    margin: 0;
+}
+
+.snippet-link.next-step {
+    max-width: 70%;
+    text-align: right;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.next-step .arrow {
+    font-size: 200%;
+    margin-left: 20px;
 }

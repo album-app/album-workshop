@@ -2,6 +2,7 @@
 slug: "/solution_writing"
 title: "Writing a solution"
 description: "This section explains how to write, install and run an Album solution."
+next: ["remote_catalog", "add_to_catalog", "local_catalog"]
 ---
 
 <div class="learning-objectives">

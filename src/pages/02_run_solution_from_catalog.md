@@ -2,6 +2,7 @@
 slug: "/run_solution_from_catalog"
 title: "Run a solution from a catalog"
 description: "You will learn how to install Album and run an existing solution from a catalog."
+next: ["solution_writing"]
 ---
 
 <div class="learning-objectives">
