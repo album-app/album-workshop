@@ -1,4 +1,4 @@
-color = 'rgba(0,0,0,0.3)'
+color = 'rgba(0,0,0,0.1)'
 var attrs = {
     color: color, startSocket: 'bottom', endSocket: 'top'
 }
@@ -11,10 +11,7 @@ var attrs_info = {
 function connect(start, end, startSocket='bottom', endSocket='top', path='fluid') {
     startObj = document.getElementById(start)
     endObj = document.getElementById(end)
-    console.log(startObj)
-    console.log(endObj)
     if(startObj != null && endObj != null) {
-    console.log("adding line")
         new LeaderLine(startObj, endObj, {color: color, startSocket: startSocket, endSocket: endSocket, path: path});
     }
 }

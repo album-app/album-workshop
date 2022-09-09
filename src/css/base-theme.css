@@ -187,8 +187,9 @@ div.solution-citation {
 }
 
 .snippet-link {
-    background: #d3ffef;
+    background: #e3fffe;
     color: black;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .snippet-link.optional {
