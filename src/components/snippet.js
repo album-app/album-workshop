@@ -35,7 +35,7 @@ const getSnippet = (snippets, snippetSlug) => {
 const getSnippetDiv = (snippets, snippetSlug) => {
     var snippet = getSnippet(snippets, "/"+snippetSlug)
     var snippetClass="snippet-link next-step"
-    return <Link id={snippetSlug} className={snippetClass} href={snippet.frontmatter.slug}>
+    return <Link id={snippetSlug} className={snippetClass} to={snippet.frontmatter.slug}>
         <div><h3>{snippet.frontmatter.title}</h3><div>{snippet.frontmatter.description}</div></div>
         <div className="arrow">➤</div>
     </Link>

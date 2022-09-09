@@ -36,7 +36,7 @@ const getSnippetDiv = (snippets, snippetSlug) => {
     if(snippet.frontmatter.title.includes("[optional]")) {
         snippetClass = "snippet-link optional"
     }
-    return <Link id={snippetSlug} className={snippetClass} href={snippet.frontmatter.slug}><h3>{snippet.frontmatter.title}</h3><div>{snippet.frontmatter.description}</div></Link>
+    return <Link id={snippetSlug} className={snippetClass} to={snippet.frontmatter.slug}><h3>{snippet.frontmatter.title}</h3><div>{snippet.frontmatter.description}</div></Link>
 }
 
 const makeBox = (classId, className, title, subtitle, description, content) => {
