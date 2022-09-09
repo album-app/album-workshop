@@ -71,7 +71,7 @@ setup(
 <CodeWithNote highlight='description' note='This is a short description of the specific solution.'>
 {`    description="An album solution template for running Python code.",`}</CodeWithNote>
 <CodeWithNote highlight='solution_creators' note='These are the creators of the solution [list of strings]'>
-{`    authors=["Your name"],`}</CodeWithNote>
+{`    solution_creators=["Your name"],`}</CodeWithNote>
 <CodeWithNote highlight='cite' note='This is a list of dictionaries that specify the citations associated with this solution file.'>
 {`    cite=[{`}</CodeWithNote>
 <CodeWithNote highlight='text' note='text for the text representation of the citation (Harvard format)'>
