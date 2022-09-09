@@ -1,6 +1,9 @@
 ---
 slug: "/share_solutions"
-title: ".. because you want to share your software solutions with others"
+title: "Creators"
 description: ""
 ---
-.. and that's sometimes really complicated.
+- create **reproducible, automated routines** by wrapping existing code
+- **share your solutions** with others via online catalog
+- highlight **specific software use cases**
+- **keep ownership** of your solutions - catalogs can live anywhere in git repositories

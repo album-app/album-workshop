@@ -1,7 +1,7 @@
 ---
 slug: "/concepts"
-title: "Why should you care?"
-description: "This section provides an introduction into why Album exists and what it's aiming to solve."
+title: "How can Album help you?"
+description: "Click here for an introduction into why Album exists and where it can improve your experience with (scientific) software."
 next: ["run_solution_from_catalog", "solution_writing"]
 ---
 

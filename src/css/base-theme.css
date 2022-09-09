@@ -203,8 +203,13 @@ div.solution-citation {
     border-bottom: 2px dotted rgba(0,0,0,0.2);
 }
 
+a.intro-box {
+    font-weight: normal;
+}
+
 @media (max-width: 1360px) {
     .header-logo, .header .header-menu-item {
         border: 0;
     }
 }
+

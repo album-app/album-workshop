@@ -1,7 +1,7 @@
 ---
 slug: "/background"
 title: "Who we are"
-description: "Read more about the backstory of Album."
+description: "Click here for background information about Album, including its home, Helmholtz Imaging."
 next: ["concepts"]
 ---
 Album is a tool for unifying computational tools across frameworks,

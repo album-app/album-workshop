@@ -1,6 +1,9 @@
 ---
 slug: "/browse_catalogs"
-title: ".. because you want to run someone else's awesome solution"
+title: "Users"
 description: ""
 ---
-Browse [these catalogs](#list-of-catalogs).
+- one-point access to **topic specific, not tool specific** software solutions
+- all solutions are installed in the same fashion **across platforms** (Linux, Windows, MacOS)
+- browse [existing catalogs](#list-of-catalogs) easily online
+- keep your data, **run solutions locally**

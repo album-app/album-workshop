@@ -1,7 +1,7 @@
 ---
 slug: "/local_catalog"
 title: "Create and populate a local catalog"
-description: "You will learn how to setup a local catalog, for example on a network drive, and how to deploy your solution into it."
+description: "Collecting internal software routines? Click here to learn how to setup a local catalog, for example on a network drive, and how to add your solution."
 ---
 <div class="learning-objectives">
 Learning objectives:

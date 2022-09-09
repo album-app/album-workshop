@@ -59,7 +59,7 @@ return (
     </div>
     <div className="line">
         {getBoxDiv(pageContext.snippets, "browse_catalogs")}
-        <div>
+        <div id="center-concept-block">
             {getSnippetDiv(pageContext.snippets, "concepts")}
             <div id="installer-line">
                 <h3 className="center">Installation</h3>

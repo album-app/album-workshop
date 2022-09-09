@@ -1,6 +1,6 @@
 ---
 slug: "/solutions_data_workflows"
-title: "Run solutions in a data workflow scenario"
+title: "Run solutions in a data workflow"
 description: ""
 ---
-Work in progress.
+Coming soon - we will share best practices for how to integrate Album into existing Data Version Control / workflow strategies.

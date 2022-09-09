@@ -1,8 +1,7 @@
 ---
 slug: "/remote_catalog"
 title: "Create and populate a remote catalog"
-description: "In this section of the workshop you will create a remote catalog living on Gitlab and deploy the solution
-you wrote in the previous sections of the workshop into it."
+description: "Your solution is ready to be shared? Click here to learn how to create a remote catalog living on Gitlab and upload a solution."
 ---
 
 <div class="learning-objectives">
@@ -29,7 +28,7 @@ In general, there are two different types of catalogs:
 2. request catalogs:
     - Solutions deployed to a request catalog have to be reviewed by the administrators of the catalog (e.g. the Maintainer of the catalog
       repository)
-    - After successfull review they can be added to the catalog.
+    - After successful review they can be added to the catalog.
 
 <div class="task">
 <div class="task-title">Task 1 - Follow the steps to create a direct catalog hosted on Gitlab (or github)</div>

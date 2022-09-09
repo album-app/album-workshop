@@ -307,6 +307,10 @@ h2 {
     flex: 1;
 }
 
+.intro-box h3 {
+    margin: 10px 0;
+}
+
 .line > div, .line > .flex-middle {
     flex: 3;
 }
@@ -434,13 +438,13 @@ ul.catalogs > li {
 }
 
 #sharing_via_catalogs {
-    margin-left: 100px;
+    margin-left: 70px;
+    flex: 5;
 }
 
 #install_gui {
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
-    padding-left: 50px;
     text-align: right;
 }
 
@@ -450,12 +454,12 @@ ul.catalogs > li {
 
 #installer-line .line {
     flex-wrap: nowrap;
+    margin: 0;
 }
 
 #install_commandline {
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
-    padding-right: 50px;
 }
 
 #install_commandline, #install_gui {
@@ -463,11 +467,32 @@ ul.catalogs > li {
 }
 
 #browse_catalogs {
-    margin-right: 50px;
+    margin-right: 20px;
+    flex: 8;
 }
 
 #share_solutions {
-    margin-left: 50px;
+    margin-left: 20px;
+    flex: 8;
+}
+
+#browse_catalogs ul, #share_solutions ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#browse_catalogs ul li, #share_solutions ul li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+#browse_catalogs ul li:before, #share_solutions ul li:before {
+  content: '★';
+  position: absolute;
+  left: 0;  /* place the SVG at the start of the padding */
+  color: #dd0066;
+  width: 1em;
+  height: 1em;
 }
 
 .center {
@@ -552,6 +577,11 @@ ul.catalogs > li {
     margin-left: 20px;
 }
 
+#center-concept-block {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 1000px) {
     .leader-line {
         display: none;
@@ -560,6 +590,9 @@ ul.catalogs > li {
         min-width: 80%;
         align-self: stretch;
         margin: 10px 0;
+    }
+    .line > div {
+        padding: 0;
     }
     .dummy {
         display: none;
@@ -584,5 +617,12 @@ ul.catalogs > li {
     }
     #share_solutions {
         order: 3;
+    }
+    #concepts {
+        order: 2;
+    }
+    #installer-line {
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 }

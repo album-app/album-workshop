@@ -50,7 +50,6 @@ const getNextSteps = (snippet, snippets) => {
 return (
 <div class="snippet">
     <h1 className="title">{snippet.frontmatter.title}</h1>
-    <div className="description">{snippet.frontmatter.description}</div>
     <div dangerouslySetInnerHTML={{ __html: snippet.html }}/>
     {getNextSteps(snippet, snippets)}
     <div className="feedback">

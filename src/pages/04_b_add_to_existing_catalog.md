@@ -1,7 +1,7 @@
 ---
 slug: "/add_to_catalog"
 title: "Add your solution to an existing catalog"
-description: "You will learn how to deploy a solution to an existing catalog."
+description: "Click here to learn how to upload your solution to an already existing catalog."
 ---
 
 <div class="learning-objectives">

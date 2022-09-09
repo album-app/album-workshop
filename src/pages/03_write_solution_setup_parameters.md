@@ -1,7 +1,7 @@
 ---
 slug: "/solution_writing"
-title: "Writing a solution"
-description: "This section explains how to write, install and run an Album solution."
+title: "Create a solution, wrap existing tools"
+description: "Click here to read about how to wrap existing code into an Album solution. It's a single Python file!"
 next: ["remote_catalog", "add_to_catalog", "local_catalog"]
 ---
 
