@@ -3,6 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export default function Logo() {
   return (
-  <StaticImage className="logo" src="../images/album-default-catalog-landing.png" alt="catalog logo" placeholder="blurred" fit="contain"/>
+  <StaticImage src="../images/album-default-catalog-landing.png" alt="catalog logo" placeholder="blurred" fit="contain"/>
   );
 }

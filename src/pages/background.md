@@ -3,10 +3,19 @@ slug: "/background"
 title: "Who we are"
 description: "Read more about the backstory of Album."
 ---
-`album` is a decentralized distribution platform for solutions to specific scientific problems. 
-It works across platforms, tools, and data domains and is designed to address limitations in reproducibility of 
-scientific data software solutions and workflows, particularly when interactivity is needed. `album` can be used to 
-programmatically define how to interoperate between applications. It can ship versatile applications while tweaking 
-them for a specific target audience or use case.
+Album is a tool for unifying computational tools across frameworks,
+languages, and environments. Although Album is an extension of a
+prototype originally developed by [Kyle
+Harrington](https://kyleharrington.com) while at the University of
+Idaho, the pioneering development has been performed at the Max
+Delbrueck Center for Molecular Medicine (MDC) by Kyle Harrington, Jan
+Philipp Albrecht, and Deborah Schmidt. Many of the design principles
+were revised and conceived by Deborah Schmidt, while Jan Philipp
+Albrecht established the technical foundation of Album.
 
-[`https://arxiv.org/abs/2110.00601`](https://arxiv.org/abs/2110.00601)
+The work at MDC was supported by [Helmholtz
+Imaging](https://www.helmholtz-imaging.de), which is a
+platform of the Helmholtz Association to bring scientists and
+engineers in the Helmholtz Association together to promote and develop
+imaging science and to foster synergies across imaging modalities and
+applications within the Helmholtz Association.

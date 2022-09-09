@@ -1,12 +1,14 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { withPrefix } from "gatsby"
+import Footer from "./footer"
 import "@fontsource/ubuntu"
 import "../css/layout.css"
 import "../css/base-theme.css"
 import "../css/theme.css"
 
 const Layout = ({ site, children }) => {
+console.log(site)
   return (
     <>
     <Helmet
@@ -17,6 +19,7 @@ const Layout = ({ site, children }) => {
       ]}
     >
     </Helmet>
+    <Footer site={site}/>
     <div className="root">
         <div className="main">
             <div className="content">

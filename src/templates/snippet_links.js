@@ -8,6 +8,9 @@ import { Link, withPrefix } from "gatsby"
 import { Helmet } from "react-helmet"
 import {useRef, useEffect} from 'react'
 import Header from "../components/header"
+import Catalogs from "../components/catalogs"
+import CatalogsData from "../../catalogs.yml"
+import SolutionExample from "../components/solution-example"
 
 const getSnippet = (snippets, snippetSlug) => {
     for(const snippet of snippets) {
@@ -33,11 +36,11 @@ const getSnippetDiv = (snippets, snippetSlug) => {
     if(snippet.frontmatter.title.includes("[optional]")) {
         snippetClass = "snippet-link optional"
     }
-    return <a id={snippetSlug} className={snippetClass} href={snippet.frontmatter.slug}><h2>{snippet.frontmatter.title}</h2><div>{snippet.frontmatter.description}</div></a>
+    return <Link id={snippetSlug} className={snippetClass} href={snippet.frontmatter.slug}><h3>{snippet.frontmatter.title}</h3><div>{snippet.frontmatter.description}</div></Link>
 }
 
 const makeBox = (classId, className, title, subtitle, description, content) => {
-    return <div id={classId} className={className}><h2>{title}</h2><div>{subtitle}</div><div className="box-content" dangerouslySetInnerHTML={{ __html: content }}/></div>
+    return <div id={classId} className={className}><h3>{title}</h3><div>{subtitle}</div><div className="box-content" dangerouslySetInnerHTML={{ __html: content }}/></div>
 }
 
 const SnippetsTemplate = ({ pageContext }) => {
@@ -54,7 +57,6 @@ return (
   <Layout site={pageContext.site}>
   <div className="line">
         <div className="flex-middle">
-            <Link to="/">{pageContext.site.siteMetadata.title} - {pageContext.site.siteMetadata.subtitle}</Link>
             <div>
                 {getBoxDiv(pageContext.snippets, "more-information")}
                 {getSnippetDiv(pageContext.snippets, "background")}
@@ -104,12 +106,15 @@ return (
         {getComingSoonDiv(pageContext.snippets, "packaging-coming-soon")}
     </div>
     <div ref={leaderLineBox}></div>
-    <div className="technical">
-
-        <h2>Repositories / releases</h2>
-        <Badges/>
-    </div>
-  </Layout>
+    <h2>Repositories / releases</h2>
+    <Badges/>
+    <h2>List of catalogs</h2>
+    {getBoxDiv(pageContext.snippets, "catalogs")}
+    <Catalogs catalogs={CatalogsData} />
+    <h2>Example solution</h2>
+    {getBoxDiv(pageContext.snippets, "solution-example")}
+    <SolutionExample />
+</Layout>
 )}
 
 export default SnippetsTemplate
