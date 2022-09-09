@@ -1,6 +1,6 @@
 ---
 slug: "/solution_writing"
-title: "3. Writing a solution"
+title: "Writing a solution"
 description: "This section explains how to write, install and run an Album solution."
 ---
 

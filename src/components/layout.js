@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Header from "./header"
+import { withPrefix } from "gatsby"
 import "@fontsource/ubuntu"
 import "../css/layout.css"
 import "../css/base-theme.css"
@@ -19,7 +19,6 @@ const Layout = ({ site, children }) => {
     </Helmet>
     <div className="root">
         <div className="main">
-            <Header siteMeta={site.siteMetadata} />
             <div className="content">
                 {children}
             </div>

@@ -181,6 +181,21 @@ div.solution-citation {
     margin-right: 10px;
 }
 
+.intro-box {
+    background: #f1f1f4;
+    padding: 10px;
+}
+
+.snippet-link {
+    background: #d3ffef;
+    color: black;
+}
+
+.snippet-link.optional {
+    background: #e1f1e4;
+    color: #414144;
+}
+
 @media (max-width: 1360px) {
     .header-logo, .header .header-menu-item {
         border: 0;

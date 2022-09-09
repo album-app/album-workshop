@@ -136,6 +136,29 @@ img {
   height: 0;
 }
 
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badges > * {
+    margin: 4px;
+    background: #f1f1f2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badges span {
+    color: black;
+    font-family: 'Ubuntu mono';
+    padding: 2px 5px;
+    font-size: 80%;
+}
+
+
 .solution-list {
     list-style: none;
     padding: 0;
@@ -252,21 +275,14 @@ img {
 
 .snippet-link {
     display: block;
-    background: #d3ffef;
     margin: 10px 0px;
     padding: 20px;
-    color: black;
     line-height: 1.5;
     border-radius: 5px;
 }
 
 .snippet-link h2 {
     margin: 10px 0;
-}
-
-.snippet-link.optional {
-    background: #e1f1e4;
-    color: #414144;
 }
 
 .feedback {
@@ -283,6 +299,77 @@ img {
 .feedback b {
     color: #aaffaa;
     font-size: 130%;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+
+.line .intro-box {
+    flex: 6;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.line > div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.line > .dummy {
+    flex: 1;
+}
+
+.line > div, .line > .flex-middle {
+    flex: 3;
+}
+
+.line > div, .line > .flex-more {
+    flex: 6;
+}
+
+.coming-soon {
+    opacity: 0.6;
+}
+
+#sharing_via_catalogs {
+    margin-left: 100px;
+}
+
+#install_gui {
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    padding-left: 50px;
+    text-align: right;
+}
+
+#installer-line .dummy {
+    flex:10;
+}
+
+#install_commandline {
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding-right: 50px;
+}
+
+#install_commandline, #install_gui {
+    min-width: 100px;
+}
+
+#browse_catalogs {
+    margin-right: 50px;
+}
+
+#share_solutions {
+    margin-left: 50px;
+}
+
+.center {
+    text-align: center;
 }
 
 @media (max-width: 1360px) {

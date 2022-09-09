@@ -5,8 +5,8 @@ require("dotenv").config({
 module.exports = {
  pathPrefix: '/album-workshop',
  siteMetadata: {
-    title: 'Album workshop',
-    subtitle: '',
+    title: 'Album',
+    subtitle: 'sharing favourite solutions across tools and domains',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

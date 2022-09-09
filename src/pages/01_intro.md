@@ -1,6 +1,6 @@
 ---
 slug: "/concepts"
-title: "1. Concepts of album"
+title: "Why should you care?"
 description: "This section provides an introduction into why Album exists and what it's aiming to solve."
 ---
 
