@@ -304,7 +304,6 @@ h2 {
 }
 
 .line > .dummy {
-    flex: 1;
 }
 
 .intro-box h3 {
@@ -438,8 +437,8 @@ ul.catalogs > li {
 }
 
 #sharing_via_catalogs {
-    margin-left: 70px;
-    flex: 5;
+    margin-left: 10px;
+    flex: 4;
 }
 
 #install_gui {
