@@ -9,12 +9,10 @@ languages, and environments. Although Album is an extension of a
 prototype originally developed by [Kyle
 Harrington](https://kyleharrington.com) while at the University of
 Idaho, the pioneering development has been performed at the Max
-Delbrueck Center for Molecular Medicine (MDC) by Kyle Harrington, Jan
-Philipp Albrecht, and Deborah Schmidt. Many of the design principles
-were revised and conceived by Deborah Schmidt, while Jan Philipp
-Albrecht established the technical foundation of Album.
+Delbrück Center for Molecular Medicine (MDC) by Kyle Harrington, Jan
+Philipp Albrecht, and Deborah Schmidt. 
 
-The work at MDC was supported by [Helmholtz
+The work at MDC is funded by [Helmholtz
 Imaging](https://www.helmholtz-imaging.de), which is a
 platform of the Helmholtz Association to bring scientists and
 engineers in the Helmholtz Association together to promote and develop

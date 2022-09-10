@@ -1,7 +1,7 @@
 ---
 slug: "/run_solution_from_catalog"
 title: "Run a solution from a catalog"
-description: "Click here to learn how to install Album and run an existing solution from a catalog. It's a breeze!"
+description: "Click here to learn how to run an existing solution from a catalog. It's a breeze!"
 next: ["solution_writing"]
 ---
 

@@ -598,11 +598,13 @@ ul.catalogs > li {
 }
 
 .snippet-link.next-step {
-    max-width: 70%;
+    max-width: 450px;
     text-align: right;
     background: none;
     display: flex;
     align-items: center;
+    box-shadow: none;
+    padding: 0;
 }
 
 .next-step .arrow {
@@ -613,6 +615,9 @@ ul.catalogs > li {
 #center-concept-block {
     display: flex;
     flex-direction: column;
+}
+
+.snippet p {
 }
 
 @media (max-width: 1000px) {
