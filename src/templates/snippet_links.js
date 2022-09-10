@@ -22,9 +22,9 @@ const getSnippet = (snippets, snippetSlug) => {
     }
 }
 
-const getBoxDiv = (snippets, snippetSlug) => {
+const getBoxDiv = (snippets, snippetSlug, h2=false) => {
     var snippet = getSnippet(snippets, "/"+snippetSlug)
-    return makeBox(snippetSlug, snippetSlug, snippet.frontmatter.title, snippet.frontmatter.subtitle, snippet.frontmatter.description, snippet.html)
+    return makeBox(snippetSlug, snippetSlug, snippet.frontmatter.title, snippet.frontmatter.subtitle, snippet.frontmatter.description, snippet.html, h2)
 }
 
 const getComingSoonDiv = (snippets, snippetSlug) => {
@@ -41,7 +41,10 @@ const getSnippetDiv = (snippets, snippetSlug) => {
     return <Link id={snippetSlug} className={snippetClass} to={snippet.frontmatter.slug}><h3>{snippet.frontmatter.title}</h3><div>{snippet.frontmatter.description}</div></Link>
 }
 
-const makeBox = (classId, className, title, subtitle, description, content) => {
+const makeBox = (classId, className, title, subtitle, description, content, h2) => {
+    if(h2) {
+        return <div id={classId} className={className}><h2>{title}</h2><div>{subtitle}</div><div className="box-content" dangerouslySetInnerHTML={{ __html: content }}/></div>
+    }
     return <div id={classId} className={className}><h3>{title}</h3><div>{subtitle}</div><div className="box-content" dangerouslySetInnerHTML={{ __html: content }}/></div>
 }
 
@@ -98,11 +101,9 @@ return (
     </div>
     <h2>Repositories / releases</h2>
     <Badges/>
-    <h2 id="list-of-catalogs">List of catalogs</h2>
-    {getBoxDiv(pageContext.snippets, "catalogs")}
+    {getBoxDiv(pageContext.snippets, "catalogs", true)}
     <Catalogs catalogs={CatalogsData} />
-    <h2>Example solution</h2>
-    {getBoxDiv(pageContext.snippets, "solution-example")}
+    {getBoxDiv(pageContext.snippets, "solution-example", true)}
     <SolutionExample />
 </Layout>
 )}

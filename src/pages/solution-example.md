@@ -1,6 +1,6 @@
 ---
 slug: "/solution-example"
-description: ""
+title: "Example solution"
 ---
 
 This is an exemplary album solution.

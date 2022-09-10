@@ -1,6 +1,7 @@
 ---
 slug: "/catalogs"
-description: ""
+title: "List of catalogs"
 ---
+This is a curated list of public catalogs. Please contact us to add yours to the list.
 
-This is a curated list of public catalogs. album catalogs can be hosted anywhere, remotely and locally , therefore it is not possible to list all existing album catalogs. 
+Follow [this guide](run_solution_from_catalog) to learn how to benefit from Album catalogs and access their solutions.
